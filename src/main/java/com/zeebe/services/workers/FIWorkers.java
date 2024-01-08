@@ -13,6 +13,6 @@ public class FIWorkers {
 	public void aServiceTask(final JobClient client, final ActivatedJob job) {
 		System.out.println("Job worker worked!");
 		System.out.println(job.getVariables());
-		client.newCompleteCommand(job).variables("{\"var1\":\"pam\"}").send();
+		client.newCompleteCommand(job).variables("{\"var1\":\"final\"}").send();
 	}
 }
